@@ -34,7 +34,7 @@ gulp.task('styles', function() {
     .pipe(source.init())
     .pipe(autoprefixer('last 2 version', 'ie 10', 'android 4', 'safari 5'))
     .pipe(minify())
-    .pipe(source.write('css/maps/'))
+    .pipe(source.write('maps/'))
     .pipe(gulp.dest('css/'));
 });
 
