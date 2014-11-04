@@ -1,0 +1,96 @@
+// About
+// All about page styles
+
+// ADES About section
+// That component can be re-used
+
+.ades-title {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  clear: both;
+  background-color: #fff;
+
+    &:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    z-index: -1;
+    border-top: 2px dashed @border-color;
+  }
+
+}
+
+.ades-title-box {
+  width: 150px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+// About characteristics and benefits section
+
+.about-box {
+  padding-top: 50px;
+  .row();
+}
+
+.about-characteristics {
+  .column(6);
+  padding-right: 50px;
+}
+
+.about-benefits {
+  .column(6);
+  padding-left: 50px;
+}
+
+.about-title {
+  font-size: 3.6rem;
+  color: @s-text;
+  margin-bottom: 40px;
+}
+
+.about-list {
+  padding-left: 0;
+  list-style: none;
+
+  h1 {
+    font-size: 1.8rem;
+    color: @f-text;
+    margin: 0;
+    padding-left: 40px;
+  }
+
+  p {
+    margin: 0;
+    padding-left: 40px;
+    font-size: 11px;
+    color: @f-text;
+  }
+
+  a {
+    padding-left: 40px;
+  }
+
+}
+
+.characteristics-item {
+  margin-bottom: 25px;
+
+  &:before {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    float: left;
+    font-size: 3.2rem;
+    line-height: 50px;
+  }
+}
