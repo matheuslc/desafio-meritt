@@ -1,7 +1,7 @@
 {
   "name": "desafio-meritt",
   "version": "0.0.1",
-  "description": "Qedu landing page",
+  "description": "QData landing page",
   "main": "gulpfile.js",
   "scripts": {
     "test": "gulp ci"
