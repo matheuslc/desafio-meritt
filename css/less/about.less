@@ -5,6 +5,7 @@
 // That component can be re-used
 
 .ades-title {
+  .clearfix();
   width: 100%;
   text-align: center;
   position: relative;
@@ -26,7 +27,7 @@
 }
 
 .ades-title-box {
-  width: 150px;
+  width: 100px;
   height: 30px;
   background-color: #fff;
   position: absolute;
@@ -117,4 +118,20 @@
     line-height: 50px;
     color: #993366;
   }
+}
+
+
+// Responsive
+
+@media (max-width: 768px) {
+
+  .about-characteristics {
+    .column(12);
+    padding: 0 15px;
+  }
+
+  .about-benefits {
+    &:extend(.about-characteristics);
+  }
+
 }
