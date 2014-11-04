@@ -63,28 +63,38 @@
   padding-left: 0;
   list-style: none;
 
+  li {
+    margin-bottom: 25px;
+  }
+
   h1 {
     font-size: 1.8rem;
     color: @f-text;
     margin: 0;
-    padding-left: 40px;
+    padding-left: 45px;
   }
 
   p {
     margin: 0;
-    padding-left: 40px;
+    padding-left: 45px;
     font-size: 11px;
     color: @f-text;
   }
 
   a {
-    padding-left: 40px;
+    padding-left: 15px;
+    font-size: 1.1rem;
+    color: @link-color;
+
+    &:before {
+      content: ">";
+      margin-right: 5px;
+    }
   }
 
 }
 
 .characteristics-item {
-  margin-bottom: 25px;
 
   &:before {
     content: "\f00c";
@@ -92,5 +102,19 @@
     float: left;
     font-size: 3.2rem;
     line-height: 50px;
+    color: #0099FF;
+  }
+}
+
+.benefits-item {
+
+  &:before {
+    content: "\f005";
+    font-family: "FontAwesome";
+    float: left;
+    display: inline-block;
+    font-size: 3.2rem;
+    line-height: 50px;
+    color: #993366;
   }
 }
