@@ -22,14 +22,15 @@
    * @param anchor {string} Anchor elemnt class
    */
    APP.toggleMenu = function(anchor) {
-      var el = document.querySelector(anchor);
-      document.querySelector('body')
-              .classList
-              .toggleClass('menu-active');
-   };
+      var el   = document.querySelector(anchor),
+          root = document.querySelector('body');
 
-   window.addEventListener('load', function() {
+      el.addEventListener('click', function() {
+        root.classList
+            .toggle('menu-active');
+      });
+   }
+
     APP.init();
-   });
 
-}(window, document));
+}(document, window));

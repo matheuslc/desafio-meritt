@@ -41,8 +41,12 @@
 .main-search {
   .column(4);
   position: relative;
+}
 
-  &:after {
+.custom-search {
+    position: relative;
+
+    &:after {
     content: "\f002";
     font-family: "FontAwesome";
     position: absolute;
@@ -51,15 +55,14 @@
     top: 10px;
     left: 30px;
   }
-
 }
 
 .search {
   display: block;
+  width: 100%;
   height: 40px;
   outline: 0;
   margin-left: 15px;
-  min-width: 315px;
   border-radius: 12px;
   padding-left: 50px;
   padding-right: 20px;
@@ -102,17 +105,59 @@
 
   .anchor {
     display: block;
+    color: @nav-color;
+    font-size: 3.6rem;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
   }
 
   .main-nav {
     position: fixed;
     height: 100%;
     transform: translateX(-768px);
+    transition: .3s all ease-in-out;
+  }
+
+  .main-logo {
+    .column(12);
+    max-width: 100%;
+  }
+
+  .main-search {
+    .column(12);
+    max-width: 100%;
+  }
+
+  .custom-menu {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .search {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .custom-search {
+    margin: 20px auto;
+  }
+
+  .main-menu {
+    .column(12);
   }
 
   // Menu active
   .menu-active .main-nav {
     transform: translateX(0);
+  }
+
+  .main-menu-item {
+    display: block;
+    border-right: 0;
+    padding: 20px 0;
   }
 
 
