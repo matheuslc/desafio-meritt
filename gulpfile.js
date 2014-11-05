@@ -7,7 +7,9 @@ var gulp         = require('gulp'),
     source       = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
     minify       = require('gulp-minify-css'),
-    connect      = require('gulp-connect');
+    connect      = require('gulp-connect'),
+    rename       = require('gulp-rename'),
+    uglify       = require('gulp-uglify');
 
 /* Server Taks
  * Running a local server
@@ -38,6 +40,22 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('css/'));
 });
 
+/* scripts tasks
+ * @description Compile all .js files, minify
+*/
+
+gulp.task('scripts', function() {
+  // We have just a file
+  return gulp.src('js/main.js')
+    .pipe(uglify())
+    .pipe(source.init())
+    .pipe(source.write('maps/'))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('js/'))
+});
+
 
 /* Watch taks
  * @description Watch files, when have any edition run some task
@@ -45,6 +63,7 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
   gulp.watch('css/less/*.less', ['styles']);
+  gulp.watch('js/main.js', ['scripts']);
 });
 
 /* Default tasks
