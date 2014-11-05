@@ -1,28 +1,53 @@
 # Desafio Meritt
 
-## Project Structure
+### Project structure
 
-desafio-meritt
---css - Style files
---js  - Javascript files
-README.md - Project description
-gulpfile.js - Gulp (task runner) file
-index.html - main html file
-package.json - Project details (with dependencies, name, author e etc)
+- desafio-meritt
+- __ css (stylesheets files)
+- ____ less (LESS files)
+- ____ maps (sourcemaps files)
+- __ js (javascript files)
+- ____ maps (sourcemaps files)
+- ____ vendor (third party plugins)
 
-## How to use
 
-### Without Gulp
+### How to use
 
-Just open index.html file.
+Fast way:
 
-### With Gulp
+Clone the repository.
 
-You have to have node.js (with npm) installed.
+```bash
+git clone git@github.com:matheuslc/desafio-meritt.git
+```
 
-Instructions
+Open index.html file.
 
-1. Clone the project
-2. Run a npm install to install all dependencies listed in package.json
-3. Run a gulp server to up a web server and see the project
-4. If you want to edit any files and get the files compiled, run gulp.
+
+### Gulp way
+
+
+Gulp will run a local webserver, and with it, you can see the project
+
+**Dependencies:**
+
+```bash
+node.js with npm
+```
+
+Clone the repository.
+
+```bash
+git clone git@github.com:matheuslc/desafio-meritt.git
+```
+
+Install all Gulp dependencies.
+```bash
+npm install
+```
+
+Run gulp
+```bash
+gulp
+```
+
