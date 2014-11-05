@@ -27,12 +27,22 @@
    */
    APP.toggleMenu = function(anchor) {
       var el   = document.querySelector(anchor),
-          root = document.querySelector('body');
+          i    = 0,
+          root = document.querySelector('body'),
+          menu = document.querySelectorAll('.main-menu a');
 
       el.addEventListener('click', function() {
         root.classList
             .toggle('menu-active');
       });
+
+      for(i; i < menu.length; i++) {
+        menu[i].addEventListener('click', function() {
+          root.classList
+              .toggle('menu-active');
+        });
+      }
+
    };
 
    /* Get distance between element and window top
