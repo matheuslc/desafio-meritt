@@ -48,11 +48,11 @@ gulp.task('scripts', function() {
   // We have just a file
   return gulp.src('js/main.js')
     .pipe(uglify())
-    .pipe(source.init())
-    .pipe(source.write('maps/'))
     .pipe(rename({
       suffix: '.min'
     }))
+    .pipe(source.init())
+    .pipe(source.write('maps/'))
     .pipe(gulp.dest('js/'))
 });
 
