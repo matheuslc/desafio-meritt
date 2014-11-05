@@ -13,7 +13,7 @@
 
 ### How to use
 
-Fast way:
+Fast way (Will break icons (font awesome, CORS error)), I recommend the gulp way:
 
 Clone the repository.
 
