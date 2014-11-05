@@ -63,3 +63,4 @@
     APP.init();
 
 }(document, window));
+
