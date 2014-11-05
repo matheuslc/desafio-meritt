@@ -32,7 +32,7 @@
   margin-top: 25px;
 }
 
-.mac-text {
+.mec-text {
   font-size: 1.4rem;
   color: @s-text;
   margin-top: 0;
@@ -55,4 +55,50 @@
   font-size: 1.1rem;
   color: #ff6600;
   text-decoration: none;
+}
+
+.mec-book-section {
+  .column(5);
+  margin-top: 60px;
+  padding: 0 40px;
+}
+
+.mec-book {
+  display: block;
+  width: 250px;
+  height: 340px;
+  background-color: #09C;
+}
+
+
+// Responsive
+
+@media (max-width: 768px) {
+
+  .mec-section {
+    padding: 0 20px;
+  }
+
+  .mec-detail {
+    .column(12);
+    margin-top: 30px;
+  }
+
+  .mec-book-section {
+    .column(12);
+  }
+
+  .mec-book {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .mec {
+
+    .btn-download {
+      display: block;
+      margin: 30px auto;
+    }
+  }
+
 }

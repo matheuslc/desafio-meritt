@@ -114,18 +114,30 @@
 
 // Letters colors
 .cl-one {
-  color: @first-letter;
-  margin-right: -10px;
+  display: inline-block;
+  margin: 0;
+  &:first-letter {
+    color: @first-letter;
+  }
 }
 
 .cl-two {
-  color: @second-letter;
-  margin-right: -10px;
+  display: inline-block;
+  margin: 0;
+
+  &:first-letter {
+    color: @second-letter;
+  }
+
 }
 
 .cl-three {
-  color: @third-letter;
-  margin-right: -10px;
+  display: inline-block;
+  margin: 0;
+
+  &:first-letter {
+    color: @third-letter;
+  }
 }
 
 .section-text {
@@ -146,11 +158,13 @@
     right: 15px;
     top: 15px;
     cursor: pointer;
+    z-index: 10;
   }
 
   .main-nav {
     position: fixed;
     height: 100%;
+    z-index: 9;
     transform: translateX(-768px);
     transition: .3s all ease-in-out;
   }
@@ -189,10 +203,15 @@
     transform: translateX(0);
   }
 
+  .menu-active .anchor {
+    color: @p-text;
+  }
+
   .main-menu-item {
     display: block;
     border-right: 0;
     padding: 20px 0;
+    border-bottom: 1px solid @p-text;
   }
 
   .section-text {

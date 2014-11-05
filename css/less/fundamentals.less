@@ -43,7 +43,7 @@
   display: inline-block;
   width: 190px;
   height: 290px;
-  background-color: red;
+  background-color: @second-letter;
 }
 
 .book-description {
@@ -202,11 +202,16 @@
 
 // Extra-small devices
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
 
   .detail-item {
     .column(12);
     margin: 10px 0;
   }
 
+  .fundamentals-detail {
+    margin-top: 30px;
+  }
+
 }
+
