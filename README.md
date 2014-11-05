@@ -13,16 +13,9 @@
 
 ### How to use
 
-Fast way (Will break icons (font awesome, CORS error)), I recommend the gulp way:
+Fast way
 
-Clone the repository.
-
-```bash
-git clone git@github.com:matheuslc/desafio-meritt.git
-```
-
-Open index.html file.
-
+[http://matheuslc.com/desafio-meritt/](http://matheuslc.com/desafio-meritt/)
 
 ### Gulp way
 
